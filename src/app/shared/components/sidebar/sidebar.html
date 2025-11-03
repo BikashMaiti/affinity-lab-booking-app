@@ -1,0 +1,5 @@
+<ul style="list-style: none;">
+    @for(menuObj of this.menuList();track menuObj.id){
+        <li style="color: white;cursor: pointer;" [routerLink]="menuObj.route">{{menuObj.name}}</li>
+    }
+</ul>
